@@ -68,7 +68,7 @@ defineExpose({ setTheme });
 				target="_blank"
 				rel="noopener noreferrer"
 				class="text-highlight"
-				:href="`${socials.github.url}/`"
+				:href="`${socials.github.url}/port`"
 			>
 				<span class="has-text-white"><i class="fa-brands fa-github"></i>/</span
 				><span>{{ profile.github }}</span>
