@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia';
 import { onMounted } from 'vue';
 
-import { Card, TwitterCard } from '@/components';
-import { socials } from '@/config';
-import { useThoughtsStore } from '@/stores';
+import { Card } from '@/components';
+import { misc } from '@/config';
+import { usePreload } from '@/composables/usePreload';
+import { type GitHubSchema } from '@/stores/misc/schema';
 
-const thoughtsStore = useThoughtsStore();
-const { socialData } = storeToRefs(thoughtsStore);
-
-const twitterURL = socials.twitter.url;
+const contributions: GitHubSchema[] = misc.github.contributions;
+const { preloadImage } = usePreload();
 
 onMounted(async () => {
-	await thoughtsStore.fetchSocialData();
+	const banners = [...new Set(contributions.map((repo) => repo.banner))];
+	await Promise.allSettled(banners.map((banner) => preloadImage(banner)));
 });
 </script>
 
@@ -20,46 +19,29 @@ onMounted(async () => {
 	<div class="thoughts columns is-block">
 		<div class="column has-text-left has-text-centered-mobile pb-5 headline">
 			<p class="heading">
-				My Thoughts<span class="is-hidden-desktop"></span>
+				Open Source<span class="is-hidden-desktop"></span>
 				<br />
 				<span> and </span>
-				<span class="text-highlight">Perspectives</span>
+				<span class="text-highlight">Contributions</span>
 			</p>
 		</div>
-		<div>
-			<div class="twitter-section column has-text-left pr-0">
-				<div class="bullets mb-5">
-					<span
-						><span class="text-highlight is-clickable"># </span>My
-						Thoughts</span
-					>
-				</div>
-				<div class="column p-0 pl-3">
-					<a target="_blank" rel="noopener noreferrer" :href="twitterURL">
-						<TwitterCard
-							:tweets="socialData.twitter.tweets"
-							:user="socialData.twitter.user"
-							v-if="socialData"
-						/>
-					</a>
-				</div>
+		<div class="opensource-section column has-text-left pr-0">
+			<div class="bullets mb-1">
+				<span><span class="text-highlight is-clickable"># </span>My Open Source</span>
 			</div>
-			<div class="blog-section column has-text-left mt-5 pr-0">
-				<div class="bullets mb-1">
-					<span
-						><span class="text-highlight is-clickable"># </span>My Blogs</span
-					>
-				</div>
-				<div class="column is-flex-desktop is-flex-wrap-wrap p-0">
-					<div
-						class="column is-6 pl-0"
-						v-for="blog in socialData?.blogs"
-						:key="blog.title"
-					>
-						<a :href="blog.url" target="_blank" rel="noopener noreferrer">
-							<Card :data="blog" />
-						</a>
-					</div>
+			<p class="section-note mb-4">
+				I contribute to open-source projects like Cboard, Moment.js, and Cal.com — and
+				share my own work on GitHub instead of writing blogs.
+			</p>
+			<div class="column is-flex-desktop is-flex-wrap-wrap p-0">
+				<div
+					class="column is-6 pl-0"
+					v-for="repo in contributions"
+					:key="repo.url"
+				>
+					<a :href="repo.url" target="_blank" rel="noopener noreferrer">
+						<Card :data="repo" :isLink="true" :tags="true" />
+					</a>
 				</div>
 			</div>
 		</div>
@@ -72,7 +54,12 @@ onMounted(async () => {
 		font-size: 20px;
 	}
 
-	.blog-section {
+	.section-note {
+		color: var(--text-color-grey);
+		font-size: var(--text-small-font-size);
+	}
+
+	.opensource-section {
 		::v-deep(.card .banner) {
 			height: 170px;
 		}
@@ -87,7 +74,7 @@ onMounted(async () => {
 	}
 
 	@media screen and (max-width: 768px) {
-		.blog-section {
+		.opensource-section {
 			padding-right: var(--bulma-column-gap) !important;
 
 			.pl-0 {

@@ -2,31 +2,19 @@
 	"email": {
 		"title": "Email",
 		"icon": "email",
-		"url": "mailto:shahrukhanwar@proton.me"
+		"url": "mailto:ibrahim.bahameen@gmail.com"
 	},
 	"github": {
 		"title": "GitHub",
 		"icon": "github",
-		"url": "https://github.com/devshahrukhanwar"
+		"url": "https://github.com/I-BRu"
 	},
-	"twitter": {
-		"title": "Twitter",
-		"icon": "twitter",
-		"url": "https://x.com/devshahrukh"
-	},
-	"stackoverflow": {
-		"title": "StackOverflow",
-		"icon": "stack-overflow",
-		"url": "https://stackoverflow.com/users/8473036/shahrukh-anwar"
-	},
+	
+	
 	"linkedin": {
 		"title": "Linkedin",
 		"icon": "linkedin",
-		"url": "https://www.linkedin.com/in/devshahrukh"
-	},
-	"medium": {
-		"title": "Medium",
-		"icon": "medium",
-		"url": "https://medium.com/@devshahrukh"
+		"url": "https://www.linkedin.com/in/iibruu/"
 	}
+	
 }

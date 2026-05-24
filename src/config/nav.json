@@ -20,8 +20,8 @@
 		"path": "/experience"
 	},
 	"thoughts": {
-		"title": "Thoughts",
-		"icon": "fa-regular fa-pen-to-square",
+		"title": "Open Source",
+		"icon": "fa-brands fa-github",
 		"path": "/thoughts"
 	},
 	"contact": {

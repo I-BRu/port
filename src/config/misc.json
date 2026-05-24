@@ -1,22 +1,61 @@
 {
-  "github": {
-    "repositories": [
-      {
-        "url": "https://github.com/devshahrukhanwar/shahrukh-anwar",
-        "banner": "https://opengraph.githubassets.com/1/devshahrukhanwar/shahrukh-anwar"
-      },
-      {
-        "url": "https://github.com/devshahrukhanwar/api-shahrukh-anwar",
-        "banner": "https://opengraph.githubassets.com/1/devshahrukhanwar/api-shahrukh-anwar"
-      },
-      {
-        "url": "https://github.com/devshahrukhanwar/coding-practices",
-        "banner": "https://opengraph.githubassets.com/1/devshahrukhanwar/coding-practices"
-      },
-      {
-        "url": "https://github.com/devshahrukhanwar/croppy-library",
-        "banner": "https://opengraph.githubassets.com/1/devshahrukhanwar/croppy-library"
-      }
-    ]
-  }
+	"github": {
+		"repositories": [
+			{
+				"title": "Pathfinder AI",
+				"subtitle": "Interactive mapping app with location search, weather, and 3D buildings — Next.js, Mapbox, and TypeScript.",
+				"url": "https://github.com/I-BRu/pathfinder-ai",
+				"githubBanner": "https://opengraph.githubassets.com/1/I-BRu/pathfinder-ai",
+				"banner": "/photos/me1.png",
+				"tags": ["nextjs", "typescript", "mapbox"]
+			},
+			{
+				"title": "AI Ticketing",
+				"subtitle": "AI support platform with SLA monitoring, ticket classification, and RAG responses — FastAPI, Groq, and Milvus.",
+				"url": "https://github.com/I-BRu/Ai-Ticketing",
+				"githubBanner": "https://opengraph.githubassets.com/1/I-BRu/Ai-Ticketing",
+				"banner": "/photos/me1.png",
+				"tags": ["python", "fastapi", "llm"]
+			},
+			{
+				"title": "PR Review Agent",
+				"subtitle": "GitHub App for automated PR reviews with diff-first analysis and inline comments — Python, FastAPI, LangGraph.",
+				"url": "https://github.com/I-BRu/PR-agent",
+				"githubBanner": "https://opengraph.githubassets.com/1/I-BRu/PR-agent",
+				"banner": "/photos/me1.png",
+				"tags": ["python", "fastapi", "github"]
+			},
+			{
+				"title": "Piggy Metrics",
+				"subtitle": "Microservices finance demo with Spring Boot, Docker, MongoDB, OAuth2, and distributed-system patterns.",
+				"url": "https://github.com/I-BRu/Piggymetrics",
+				"githubBanner": "https://opengraph.githubassets.com/1/I-BRu/Piggymetrics",
+				"banner": "/photos/me1.png",
+				"tags": ["java", "spring", "docker"]
+			}
+		],
+		"contributions": [
+			{
+				"title": "Cboard",
+				"subtitle": "AAC communication board with symbols and text-to-speech for browsers — contributing to the cboard-org ecosystem.",
+				"url": "https://github.com/I-BRu/cboard",
+				"banner": "https://opengraph.githubassets.com/1/I-BRu/cboard",
+				"tags": ["react", "typescript", "aac"]
+			},
+			{
+				"title": "Moment.js",
+				"subtitle": "JavaScript date library for parsing, validating, manipulating, and formatting dates — open-source work on the moment.js codebase.",
+				"url": "https://github.com/I-BRu/moment",
+				"banner": "https://opengraph.githubassets.com/1/I-BRu/moment",
+				"tags": ["javascript", "dates", "open-source"]
+			},
+			{
+				"title": "Cal.com",
+				"subtitle": "Open-source scheduling infrastructure — contributions to the Cal.com platform for booking, calendars, and team scheduling.",
+				"url": "https://github.com/calcom/cal.com",
+				"banner": "https://opengraph.githubassets.com/1/calcom/cal.com",
+				"tags": ["typescript", "nextjs", "scheduling"]
+			}
+		]
+	}
 }

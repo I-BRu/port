@@ -1,31 +1,31 @@
 {
-	"client": 9,
-	"joining": 2017,
+	"client": 10,
+	"joining": 2020,
 	"projects": 10,
 	"companies": [
 		{
-			"name": "SenecaGlobal",
-			"tenure": "Jan 2022 - Present",
-			"url": "https://www.senecaglobal.com",
-			"details": "Joined as a <b>Senior Software Engineer</b> with the role of <b>Independent Contributor</b>. Getting my hands dirty with <b>Design Patterns, SOLID Principles, Agile Practices, Microservices</b>, etc. in the projects here."
+			"name": "Virtusa",
+			"tenure": "Aug 2025 - Feb 2026",
+			"url": "https://www.virtusa.com",
+			"details": "Worked as a <b>Full Stack Developer</b> on client-facing products — shipping features end-to-end, collaborating in agile squads, and focusing on reliable APIs and polished UI delivery."
 		},
 		{
-			"name": "ValueCoders",
-			"tenure": "Sept 2019 - Dec 2021",
-			"url": "https://www.valuecoders.com",
-			"details": "Worked as an integral part of the team at <b>ValueCoders</b> as a <b>Full Stack Developer</b>. Got my hands on <b>Laravel, Vuejs, Elasticsearch, Symfony</b>, etc. Gave a lot of training to the team members and associate developers on my native tech stack."
+			"name": "Grab",
+			"tenure": "Jan 2025 - Dec 2025",
+			"url": "https://www.grab.com",
+			"details": "Completed an <b>SDE Internship</b> building and integrating software in a large-scale product environment — learning production practices, code review culture, and cross-team collaboration."
 		},
 		{
-			"name": "Sparx IT",
-			"tenure": "Mar 2019 - Sept 2019",
-			"url": "https://www.sparxitsolutions.com",
-			"details": "My <b>Full Stack Development</b> journey started here. Worked on <b>Laravel</b>, <b>Node.js</b>, <b>Vuejs</b>, <b>JQuery</b> and similar technologies here with a great team to build some of the very interesting products with a very collaborative and great management."
+			"name": "CodeClause",
+			"tenure": "Jan 2024 - Jun 2024",
+			"url": "https://www.codeclause.com",
+			"details": "Served as a <b>Software Engineer Intern</b> on real-world projects with mentor guidance — contributing to full-stack features, debugging, and iterative delivery in a remote-first setup."
 		},
 		{
-			"name": "HestaBit",
-			"tenure": "July 2017 - Feb 2019",
-			"url": "https://www.hestabit.com",
-			"details": "Started my career here as a <b>Backend Developer</b> mainly in <b>PHP</b> and <b>Laravel</b>. Learned a lot and grew with <b>HestaBit</b> for 2 years. Found some great collegues there. Great management and people to work with."
+			"name": "Amara Intelligent Technologies",
+			"tenure": "Feb 2023 - Jun 2023",
+			"url": "https://www.linkedin.com/in/iibruu/",
+			"details": "Started as a <b>Full Stack Engineer</b> — building web applications with <b>React</b>, <b>Laravel</b>, and REST APIs while learning product development fundamentals."
 		}
 	]
 }

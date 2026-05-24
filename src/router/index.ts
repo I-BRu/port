@@ -48,7 +48,7 @@ const routes: RouteRecordRaw[] = [
 		name: 'Thoughts',
 		component: () => import('@/views/Thoughts.vue'),
 		meta: {
-			title: 'Thoughts',
+			title: 'Open Source',
 			showCollab: true
 		}
 	},

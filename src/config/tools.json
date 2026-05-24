@@ -1,10 +1,10 @@
 [
 	{
-		"name": "Laravel",
-		"detail": "Backend Framework (PHP)",
-		"icon": "fab fa-laravel",
-		"color": "#f53003",
-		"url": "https://laravel.com"
+		"name": "React",
+		"detail": "Frontend Library (JS)",
+		"icon": "fab fa-react",
+		"color": "#61dafb",
+		"url": "https://react.dev"
 	},
 	{
 		"name": "Vue JS",

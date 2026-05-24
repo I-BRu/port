@@ -18,6 +18,6 @@ describe('Home.vue', () => {
 		expect(wrapper.html()).toContain('Transforming');
 		expect(wrapper.html()).toContain('Recent Projects');
 		expect(wrapper.html()).toContain('Top-Tier Tech');
-		expect(wrapper.html()).toContain('My Thoughts');
+		expect(wrapper.html()).toContain('Open Source');
 	});
 });
