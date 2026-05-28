@@ -34,7 +34,7 @@ import { experience } from '@/config';
 				class="column is-inline-flex has-text-left p-0 mt-5 has-text-centered-mobile experience"
 			>
 				<div class="column is-uppercase p-0">
-					<p class="text-bold">10+</p>
+					<p class="text-bold">+10</p>
 					<span>Apps Deployed</span>
 				</div>
 				<div class="column is-uppercase p-0">
