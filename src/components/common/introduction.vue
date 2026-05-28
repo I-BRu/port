@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { experience } from '@/config';
-import { totalExperience } from '@/utils';
 </script>
 
 <template>
@@ -35,8 +34,8 @@ import { totalExperience } from '@/utils';
 				class="column is-inline-flex has-text-left p-0 mt-5 has-text-centered-mobile experience"
 			>
 				<div class="column is-uppercase p-0">
-					<p class="text-bold">+{{ totalExperience }}</p>
-					<span>Years of experience</span>
+					<p class="text-bold">10+</p>
+					<span>Apps Deployed</span>
 				</div>
 				<div class="column is-uppercase p-0">
 					<p class="text-bold">+{{ experience.projects }}</p>
@@ -45,8 +44,8 @@ import { totalExperience } from '@/utils';
 				<div class="column is-uppercase p-0">
 					<p class="text-bold">+{{ experience.client }}</p>
 					<span
-						>Worldwide <br />
-						Clients</span
+						>Products <br />
+						Shipped</span
 					>
 				</div>
 			</div>
